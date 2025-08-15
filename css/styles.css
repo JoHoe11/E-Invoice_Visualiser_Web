@@ -1,0 +1,136 @@
+/* === Base Layout === */
+body {
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: #eee;
+  padding: 2rem;
+}
+
+h1 {
+  color: #ff5555;
+  text-align: center;
+}
+
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #ff5555;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+  z-index: 100;
+}
+
+.back-button:hover {
+  background-color: #ff7777;
+}
+
+.dropzone {
+  border: 2px dashed #555;
+  padding: 3rem;
+  text-align: center;
+  background-color: #2a2a2a;
+  margin: 2rem auto;
+  border-radius: 10px;
+  color: #bbb;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropzone.dragover {
+  background-color: #333;
+  color: #fff;
+}
+
+#invoiceDisplay {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(255, 85, 85, 0.2);
+}
+
+input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* === Enhanced Invoice Preview Styles === */
+.invoice-preview {
+  background: #1b1b1b;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 15px rgba(255, 85, 85, 0.1);
+  max-width: 100%;
+}
+
+.invoice-preview h1 {
+  color: #ff5555;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.invoice-preview section {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.invoice-preview .header {
+  display: flex;
+  line-height: 1.2;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.invoice-preview .meta p {
+  margin: 0.3rem 0;
+}
+
+.invoice-preview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.invoice-preview table th {
+  background-color: #333;
+  color: #fff;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.invoice-preview table td {
+  background-color: #1e1e1e;
+  padding: 0.8rem;
+  border-top: 1px solid #444;
+}
+
+.invoice-preview ul {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.invoice-preview .summary,
+.invoice-preview .payment {
+  background: #333;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  color: #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(255, 85, 85, 0.15);
+}
+
+.invoice-preview .summary p,
+.invoice-preview .payment p {
+  margin: 0.4rem 0;
+}

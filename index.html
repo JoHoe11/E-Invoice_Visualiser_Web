@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Rechnungsanzeige</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #eee;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #ff5555;
+      text-align: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: #ff5555;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+      z-index: 100;
+    }
+
+    .back-button:hover {
+      background-color: #ff7777;
+    }
+
+    .dropzone {
+      border: 2px dashed #555;
+      padding: 3rem;
+      text-align: center;
+      background-color: #2a2a2a;
+      margin: 2rem auto;
+      border-radius: 10px;
+      color: #bbb;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .dropzone.dragover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    #invoiceDisplay {
+      background-color: #111;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(255, 85, 85, 0.2);
+    }
+
+    input[type="file"] {
+      display: block;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+  <a href="/apps" class="back-button">← Zurück zu Apps</a>
+  <h1>🔎 Rechnungsanzeige</h1>
+
+  <div class="dropzone" id="dropzone">
+    <p>Datei hierher ziehen oder auswählen:</p>
+    <input type="file" id="fileInput" />
+  </div>
+
+  <div id="invoiceDisplay"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
